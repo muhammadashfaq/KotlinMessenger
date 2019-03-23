@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ItemDetail">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+        />
+
+    <TextView
+        android:id="@+id/no_kit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="NO KIT ITEM"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textColor="@color/colorRed"
+        android:textSize="20sp" />
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/colorRed"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <requestFocus />
+    </com.github.ybq.android.spinkit.SpinKitView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_view"
+        android:layout_below="@id/toolbar"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search Item"
+            android:padding="10dp"
+            android:background="@drawable/search_background"
+            android:textColorHint="@color/colorRed"
+            android:drawableEnd="@android:drawable/ic_menu_search"
+            android:drawableRight="@android:drawable/ic_menu_search" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@id/search_view"
+        android:orientation="vertical"
+        android:weightSum="9">
+
+        <TextView
+            android:id="@+id/txt_vu_detail_ship"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:text="PLEASE CHOOSE SUB ITEM YOU WANT TO SEE: "
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_kititem_yes"
+            android:layout_width="200dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:layout_height="0dp"
+            android:background="@drawable/button_background"
+            android:text="KIT ITEMS"/>
+        <Button
+            android:id="@+id/btn_kititem_no"
+            android:layout_width="200dp"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:layout_height="0dp"
+            android:background="@drawable/button_background"
+            android:text="NON KIT ITEMS"/>
+
+    </LinearLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/radio_group">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyler_view_podetails_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"
+        >
+
+    </include>
+    <TextView
+        android:id="@+id/txt_vu_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOADING. . ."
+        android:textStyle="bold"
+        android:textColor="@color/colorRed"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+
+        />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/colorRed" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="visible"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+        <requestFocus />
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_view"
+        android:layout_below="@id/toolbar"
+        android:weightSum="3"
+        android:padding="10dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+       >
+
+        <SearchView
+            android:id="@+id/po_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search Item"
+            android:padding="1dp"
+            android:background="@drawable/search_background"
+            android:textColorHint="@color/colorRed"
+            android:drawableEnd="@android:drawable/ic_menu_search"
+            android:drawableRight="@android:drawable/ic_menu_search" />
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Search Item"-->
+            <!--android:padding="10dp"-->
+            <!--android:background="@drawable/search_background"-->
+            <!--android:textColorHint="@color/colorRed"-->
+            <!--android:drawableEnd="@android:drawable/ic_menu_search"-->
+            <!--android:drawableRight="@android:drawable/ic_menu_search" />-->
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_view"
+
+        android:orientation="vertical">
+
+
+
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="1dp">-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyler_view_items">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        <!--</ScrollView>-->
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+
+
+
+</RelativeLayout>

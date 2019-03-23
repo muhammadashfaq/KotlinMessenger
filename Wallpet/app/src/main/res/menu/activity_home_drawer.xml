@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Recent Activity"
+        android:enabled="true">
+        <menu>
+            <item
+                android:id="@+id/nav_collections"
+                android:title="Collections"
+                android:icon="@drawable/ic_collections_white_24dp"/>
+            <item
+                android:id="@+id/nav_loved"
+                android:title="Loved"
+                android:icon="@drawable/ic_loved_white_24dp"/>
+            <item
+                android:id="@+id/nav_downloads"
+                android:title="Downloads"
+                android:icon="@drawable/ic_download_white_24dp"
+                />
+            <item
+                android:id="@+id/nav_upload"
+                android:title="Upload"
+                android:icon="@drawable/ic_file_upload_black_24dp"
+                />
+        </menu>
+    </item>
+
+
+    <item android:title="Share"
+         android:enabled="true">
+        <menu>
+            <item
+                android:id="@+id/nav_facebook"
+                android:title="Facebook"
+                android:icon="@drawable/facebook"/>
+            <item
+                android:id="@+id/nav_twitter"
+                android:title="Twitter"
+                android:icon="@drawable/twitter"/>
+            <item
+                android:id="@+id/nav_instagram"
+                android:title="Instgram"
+                android:icon="@drawable/instagram"
+                />
+            <item
+                android:id="@+id/nav_whatsapp"
+                android:title="Whatsapp"
+                android:icon="@drawable/whatsapp"
+                />
+        </menu>
+    </item>
+
+
+</menu>

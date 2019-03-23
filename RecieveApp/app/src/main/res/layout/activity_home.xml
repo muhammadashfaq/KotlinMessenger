@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back" />
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar_home"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearNetworkStatus"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:visibility="visible"
+        android:background="@color/colorRed"
+        android:layout_below="@id/toolbar_home">
+
+        <TextView
+            android:id="@+id/tv_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:text="Status"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearCountry"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="#ECEFF1"
+        android:layout_below="@id/linearNetworkStatus">
+
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearPhone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="#ECEFF1"
+        android:layout_below="@id/linearCountry">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PhoneNumber"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:onClick="getMessages"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp">
+
+
+        <Button
+            android:id="@+id/calllogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Calllogs"
+            android:textSize="18sp"
+            android:onClick="getCalllogs"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_shape"/>
+
+        <Button
+            android:id="@+id/btn_messages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Messges"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:onClick="getMessages"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="20dp" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Mobile"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:onClick="onClickDelteMobile"
+            android:padding="10dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_shape_red"
+            android:layout_marginTop="20dp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

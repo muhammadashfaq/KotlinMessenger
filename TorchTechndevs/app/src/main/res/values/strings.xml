@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Torch</string>
+
+    //BannerAdd
+    <string name="admob_app_id">ca-app-pub-9893079696485768~2765422428</string>
+    <string name="admob_banner_add_id">ca-app-pub-9893079696485768/3771258625</string>
+
+
+    //InterstialAdd
+    <string name="admob_interstial_add_id">ca-app-pub-9893079696485768/5104236182</string>
+
+    //SampleAppID's
+    <string name="admob_app_id_test">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_test">ca-app-pub-3940256099942544/6300978111</string>
+</resources>

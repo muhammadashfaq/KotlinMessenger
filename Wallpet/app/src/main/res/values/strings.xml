@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Wallpet</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="url">http://192.168.7.105/index.php</string>
+
+    <string name="app_detail" formatted="true">Wallpet is specialy design for hd wallpepers of diffrent sizes.You can download and share wallpepers with your friends.</string>
+</resources>

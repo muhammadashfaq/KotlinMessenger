@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodList"
+    android:id="@+id/foodRootLayout"
+    android:background="@drawable/backgroundimage"
+    android:orientation="vertical">
+
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:layout_alignParentTop ="true"
+        android:layout_gravity="top"
+        android:visibility="visible"
+        app:mt_placeholderColor="@color/colorPrimary"
+        app:mt_hintColor="@color/colorPrimary"
+        app:mt_roundedSearchBarEnabled="false"
+        android:layout_margin="10dp"
+        app:mt_speechMode="false"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_food_list"
+        android:scrollbars="vertical"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_food_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@id/recycler_food_list"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_playlist_add_black_24dp"
+        app:backgroundTint="@color/colorWhite"
+        android:layout_alignRight="@id/recycler_food_list" />
+</RelativeLayout>

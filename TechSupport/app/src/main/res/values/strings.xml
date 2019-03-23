@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">Tech Support</string>
+    <string name="introduct">Computer are everywhere.Every child is aware of computers.But when comes fault,it makes user frustated.
+        This app is designed to handle those problem in easy way.
+        <b>Hope it will help you a lot.</b></string>
+
+
+    <string-array name="header_titles">
+        <item>System restored not turned on</item>
+        <item>PC is working too slow</item>
+        <item>Uninstall programs you no longer use</item>
+    </string-array>
+    
+    <string-array name="h1_items">
+        <item>Solution:Follow the steps\n\n
+            1.type"creatre a restore point" in search bar\n\n
+            2.In system properties window highlight the "system(Local disk c:)" drive to highlight it.\n\n
+            3.Click on "Configure"\n\n
+            4.Check "turn on system protection"\n\n
+            5.Drag the <b>Max Usage</b> so that it is around 5GB\n\n
+            6.Click Apply</item>
+    </string-array>
+    <string-array name="h2_items">
+        <item>1.Reduce Startup Programs\n\n
+              2.Type "System configuration" into the Windows search field \n\n
+              3.Open the app\n\n
+              4.Click on the “Services” tab and check “Hide all Microsoft services”\n\n
+              5. Now turn off the programs you don’t think you need and click apply\n\n</item>
+    </string-array>
+
+    <string-array name="h3_items">
+        <item>  1.Type “Programs and features” into the Windows search field\n\n
+                2.Open the app\n\n
+                3.Highlight an app you are sure you no longer need and click "Uninstall/Change"\n\n
+                Find junk files and delete them to free up space\n\n
+                Another way to lighten your hard drive and speed up Windows is to identify all\n\n
+                the temporary junk files that apps build up on your system.\n\n
+                Follow these steps:\n\n
+                Type "Disk cleanup" into the Windows search field\n\n
+                Open the app\n\n
+                Select the drive to clean (normally c:)\n\n
+                Select the files you want cleaned - if you’re unsure highlight the item\n\n
+                and Windows will explain in more detail\n\n</item>
+    </string-array>
+
+
+    <string-array name="laptop_titles">
+        <item>Turn on Laptop Touchpad</item>
+        <item>Speed up your laptop</item>
+        <item>Uninstall programs you no longer use</item>
+    </string-array>
+
+    <string-array name="laptop_h1">
+         <item> Many Windows 8 laptop users have encountered the problem of their touchpad not working.\n\n
+                Not too big of a problem if you have a mouse to plug in but a real annoyance
+                if you travel a lot and like to use your laptop on the go. Luckily, the problem is usually
+                that the trackpad is simply turned off.\n\n
+                To turn it on, plug in a mouse and then follow these steps:\n\n
+                Press Windows key + C\n\n
+                Click on “settings” and then “change PC settings”\n\n
+                Go to PC and devices > Mouse and touchpad\n\n
+                Make sure Touchpad is enabled\n\n</item>
+    </string-array>
+    <string-array name="laptop_h2">
+        <item>  1.Reduce Startup Programs
+                2.Type "System configuration" into the Windows search field
+                3.Open the app
+                4.Click on the “Services” tab and check “Hide all Microsoft services”
+                5. Now turn off the programs you don’t think you need and click apply</item>
+    </string-array>
+    <string-array name="laptop_h3">
+         <item> 1.Type “Programs and features” into the Windows search field\n\n
+                2.Open the app\n\n
+                3.Highlight an app you are sure you no longer need and click "Uninstall/Change"\n\n
+                Find junk files and delete them to free up space\n\n
+                Another way to lighten your hard drive and speed up Windows is to identify all the\n\n
+                temporary junk files that apps build up on your system.\n\n
+                Follow these steps:\n\n
+                Type "Disk cleanup" into the Windows search field\n\n
+                Open the app\n\n
+                Select the drive to clean (normally c:)\n\n
+                Select the files you want cleaned - if you’re unsure highlight the item and\n\n
+                Windows will explain in more detail\n\n</item>
+    </string-array>
+
+
+    <string-array name="android_title">
+        <item>Apps not downloading</item>
+        <item>Delayed Notifiction</item>
+        <item>Wifi shutting downn</item>
+        <item>Apps behaving erratically</item>
+    </string-array>
+
+    <string-array name="andorid_h1">
+        <item>  Apps not downloading from the Play Store can surely play a spoilsport in the hours of need.\n\n
+                Often the culprit is a set of corrupt cache.\n\n
+                All you have to do is head over to the app settings and clear the cache data.
+                Common-Android-Problems-Solutions  Common-Android-Problems-Solutions
+                Another sure-shot alternative is to erase the Google Play store history.\n\n
+                Go to settings and tap on clear local history.\n\n
+                And if the above doesn’t work, you can delete the default Google\n\n
+                account associated with the phone and add it again to solve the problem.\n\n</item>
+    </string-array>
+
+    <string-array name="android_h2">
+        <item>  Delayed notifications can prove to be a spoiler, especially when you are on the go.\n\n
+                For instance, you can miss out on an important mail from your boss.
+                One of the main reasons for delayed or no notification is the Power Saver
+                option that many smartphone ROMs comes built with.\n\n
+                Common-Android-Problems-Solutions\n\n
+                There’s little doubt that they do a fantastic job of extending the battery life,\n\n
+                but have you wondered at what costs? These ‘features’ often cuts the data\n\n
+                connectivity when the phone is in sleep mode thus cutting the apps\n\n
+                from their only mode of communication.\n\n</item>
+    </string-array>
+    <string-array name="android_h3">
+        <item> Data connectivity to a smartphone is crucial to its functioning whether it’s cellular data you are connected to
+                or the Wi-Fi data. And one of the common issues while connected to Wi-Fi\n\n
+                is that the data switches back to cellular network as soon as the phone goes to sleep.
+                Exasperating, right?\n\n
+                Common-Android-Problems-Solutions\n\n
+                Worry not, this too can be fixed in a jiffy? The above issue occurs due\n\n
+                to the Wi-Fi sleep policy of Android. Head over to the Advanced Wi-Fi settings\n\n
+                and set the  Keep Wi-Fi on during sleep to Never. This way the switch-over never happens.\n\n
+        </item>
+    </string-array>
+    <string-array name="android_h4">
+        <item>  Many a times, we come across some apps that just get aborted multiple times or a few
+                which just goes on displaying ads that don’t allow you do anything else.\n\n
+                Common-Android-Problems-Solutions\n\n
+                A safe way out of this situation is to boot the phone in safe mode.\n\n
+                Once a phone is booted into the safe mode you’ll notice that all the third party apps are disabled.\n\n
+                So all you have to do is tap on the uninstall button.\n\n</item>
+    </string-array>
+</resources>

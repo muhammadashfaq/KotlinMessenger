@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+
+    <ImageView
+        android:id="@+id/big_app_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/big_icon"
+        android:layout_centerInParent="true" />
+    <TextView
+        android:id="@+id/snippet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chatpp"
+        android:textSize="35sp"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/big_app_icon"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/txt_vu_qoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Express your feelings"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"
+        android:layout_below="@id/snippet"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

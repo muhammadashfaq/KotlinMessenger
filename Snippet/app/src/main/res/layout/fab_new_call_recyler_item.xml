@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_margin="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_vu_call_friends_thumb"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/default_avatar"
+        android:layout_gravity="center" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignLeft="@id/img_vu_call_friends_thumb"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignStart="@id/img_vu_call_friends_thumb">
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="11dp"
+            android:layout_alignLeft="@id/img_vu_friends_thumb"
+            android:weightSum="1"
+            android:layout_alignStart="@id/img_vu_friends_thumb">
+
+            <TextView
+                android:id="@+id/txt_vu_call_friends_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:gravity="start"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="0.7"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:textColor="@color/colorBlack" />
+
+            <ImageView
+                android:id="@+id/img_vu_audio_call"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15"
+                android:gravity="end"
+                android:layout_gravity="end"
+                app:srcCompat="@drawable/ic_phone_black_24dp"/>
+            <ImageView
+                android:id="@+id/img_vu_video_call"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".15"
+                android:layout_gravity="start"
+                app:srcCompat="@drawable/ic_videocam_black_24dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="50dp"
+            android:background="#22000000" />
+    </LinearLayout>
+
+
+</RelativeLayout>

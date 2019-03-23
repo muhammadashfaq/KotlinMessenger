@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#689F38"
+    tools:context=".ChatActivity">
+
+    <include
+        android:id="@+id/app_bar_chat"
+        layout="@layout/toolbar_layout" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/msg_content_linear_layout"
+        android:layout_below="@id/app_bar_chat">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/app_bar_chat">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyceler_view_messages_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@id/app_bar_chat"
+                android:nestedScrollingEnabled="false"
+                app:reverseLayout="true"
+                app:stackFromEnd="true" />
+
+
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/msg_content_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:layout_toEndOf="@id/app_bar_chat"
+        android:weightSum="10"
+        tools:ignore="NotSibling"
+        android:layout_toRightOf="@id/app_bar_chat">
+
+        <ImageButton
+            android:id="@+id/msg_add_new_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@color/colorWhite"
+            android:onClick="sendImageMessage"
+            app:srcCompat="@drawable/ic_add_black_24dp" />
+
+        <EditText
+            android:id="@+id/msg_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="@color/colorWhite"
+            android:gravity="start"
+            android:hint="Enter Message"
+            android:paddingTop="5dp"
+            android:textColor="@color/colorBlack" />
+
+        <ImageButton
+            android:id="@+id/msg_send"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@color/colorWhite"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_send_black_24dp" />
+    </LinearLayout>
+
+</RelativeLayout>

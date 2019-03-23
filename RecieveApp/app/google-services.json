@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "130352882962",
+    "firebase_url": "https://updatedantivirus-27da0.firebaseio.com",
+    "project_id": "updatedantivirus-27da0",
+    "storage_bucket": "updatedantivirus-27da0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130352882962:android:c917cb9f65bba237",
+        "android_client_info": {
+          "package_name": "com.braniax.antivirus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130352882962-kgdkhms706vukq0givuf0ptka1u9n6lq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.braniax.antivirus",
+            "certificate_hash": "7b48abcec96d2f92f3da823950ec413b602aab5c"
+          }
+        },
+        {
+          "client_id": "130352882962-e892ccab8iieg9rcra5cund1nm16iuse.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe-y4HoFD2bKg9sqMNfYfAqURurERd1G0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130352882962-e892ccab8iieg9rcra5cund1nm16iuse.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130352882962:android:6656918b93d0f577",
+        "android_client_info": {
+          "package_name": "com.example.muhammadashfaq.recieveapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130352882962-b1nsb1m1ung6crkgs4p2oe1ijmrujqg4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.muhammadashfaq.recieveapp",
+            "certificate_hash": "75183563072f3966bd2673cccfa0178ba9cb2d20"
+          }
+        },
+        {
+          "client_id": "130352882962-e892ccab8iieg9rcra5cund1nm16iuse.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe-y4HoFD2bKg9sqMNfYfAqURurERd1G0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130352882962-e892ccab8iieg9rcra5cund1nm16iuse.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

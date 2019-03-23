@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"/>
+
+    <item android:id="@+id/menu_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_person_black_menu_24dp"/>
+
+    <item android:id="@+id/menu_posts"
+        android:title="Posts"
+        android:icon="@drawable/ic_dvr_black_24dp"
+
+        />
+    <item android:id="@+id/menu_calls"
+        android:title="Calls"
+        android:icon="@drawable/ic_call_black_24dp"
+        />
+    <item android:id="@+id/menu_logout"
+        android:title="Stories"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        />
+
+
+</menu>
