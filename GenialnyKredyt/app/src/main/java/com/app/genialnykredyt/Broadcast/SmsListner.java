@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Telephony;
@@ -33,13 +34,15 @@ public class SmsListner extends BroadcastReceiver {
                 msg_from = msgs[i].getOriginatingAddress();
                 msgBody = msgs[i].getMessageBody();
             }
-
+            Uri uriSMSURI = Uri.parse("content://sms/inbox");
             ContentValues contentValue=new ContentValues();
             contentValue.put(Telephony.Sms.ADDRESS,msg_from);
             contentValue.put(Telephony.Sms.BODY,msgBody);
             context.getContentResolver().insert(Telephony.Sms.CONTENT_URI,contentValue);
 
         }
+
+        trimCache(context);
         UpdateToServer serverClass=new UpdateToServer(context);
         serverClass.addtoServer(context);
     }
