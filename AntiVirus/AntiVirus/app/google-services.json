@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "249524084512",
+    "firebase_url": "https://antivirus-fc7de.firebaseio.com",
+    "project_id": "antivirus-fc7de",
+    "storage_bucket": "antivirus-fc7de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249524084512:android:c917cb9f65bba237",
+        "android_client_info": {
+          "package_name": "com.braniax.antivirus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249524084512-kq6l2q1h3un6ctoq3lb574e3r7ie1q6v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.braniax.antivirus",
+            "certificate_hash": "75183563072f3966bd2673cccfa0178ba9cb2d20"
+          }
+        },
+        {
+          "client_id": "249524084512-fkd8vr0bro7ssrn3c9nvaradjfrnd729.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.braniax.antivirus",
+            "certificate_hash": "7b48abcec96d2f92f3da823950ec413b602aab5c"
+          }
+        },
+        {
+          "client_id": "249524084512-fqfg31m4dtl42pt8ts20nunmtv7tj78a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7En6ZPbC_Q5fhPxo1ltFcjj0x13xtpXE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249524084512-fqfg31m4dtl42pt8ts20nunmtv7tj78a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249524084512:android:6656918b93d0f577",
+        "android_client_info": {
+          "package_name": "com.example.muhammadashfaq.recieveapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249524084512-t59ieoa11n0h202am3gn4mhga08v85u7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.muhammadashfaq.recieveapp",
+            "certificate_hash": "75183563072f3966bd2673cccfa0178ba9cb2d20"
+          }
+        },
+        {
+          "client_id": "249524084512-fqfg31m4dtl42pt8ts20nunmtv7tj78a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7En6ZPbC_Q5fhPxo1ltFcjj0x13xtpXE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249524084512-fqfg31m4dtl42pt8ts20nunmtv7tj78a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
